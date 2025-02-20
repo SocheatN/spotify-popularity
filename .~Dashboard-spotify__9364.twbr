@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='charts_reduced' inline='true' name='federated.0029vci1qdvfr11bhj6ak04pvr21' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='charts_reduced' name='textscan.01gar301s7uprv19yiq3z0h99dom'>
+            <connection class='textscan' directory='/Users/socheat/Desktop/Jupyter Projects/spotify-popularity/data' filename='charts_reduced.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01gar301s7uprv19yiq3z0h99dom' name='charts_reduced.csv' table='[charts_reduced#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='integer' name='rank' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='string' name='artist' ordinal='4' />
+            <column datatype='string' name='url' ordinal='5' />
+            <column datatype='string' name='region' ordinal='6' />
+            <column datatype='string' name='chart' ordinal='7' />
+            <column datatype='string' name='trend' ordinal='8' />
+            <column datatype='real' name='streams' ordinal='9' />
+            <column datatype='integer' name='year' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rank]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>rank</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artist</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[artist]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>artist</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chart</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[chart]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>chart</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trend</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trend]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>trend</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>streams</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[streams]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>streams</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[charts_reduced.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Global expanded' datatype='real' name='[Calculation_658932969561567232]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [region] = &apos;Global&apos; THEN&#10;    // Return all regions&#10;    ATTR([region])&#10;ELSE&#10;    [region]&#10;END' />
+      </column>
+      <column caption='charts_reduced.csv' datatype='table' name='[__tableau_internal_object_id__].[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]' role='measure' type='quantitative' />
+      <column caption='Artist' datatype='string' name='[artist]' role='dimension' type='nominal' />
+      <column caption='Chart' datatype='string' name='[chart]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Rank' datatype='integer' name='[rank]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Streams' datatype='real' name='[streams]' role='measure' type='quantitative' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Trend' datatype='string' name='[trend]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/lj/flbzlh214vg6vb135j76_3zm0000gn/T/tableau-temp/#TableauTemp_0wt23yz1v2gzu312eb6ae1ne37ey.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/20/2025 07:08:51 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15000000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>127002</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank</remote-alias>
+              <ordinal>2</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1823</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>artist</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[artist]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>artist</remote-alias>
+              <ordinal>4</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42636</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>url</remote-alias>
+              <ordinal>5</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>154007</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>6</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>chart</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[chart]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>chart</remote-alias>
+              <ordinal>7</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trend</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trend</remote-alias>
+              <ordinal>8</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>streams</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[streams]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>streams</remote-alias>
+              <ordinal>9</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>427478</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>10</ordinal>
+              <family>charts_reduced.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='charts_reduced.csv' id='charts_reduced.csv_BA794EF47A1C44CEB491F717BC114949'>
+            <properties context=''>
+              <relation connection='textscan.01gar301s7uprv19yiq3z0h99dom' name='charts_reduced.csv' table='[charts_reduced#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='integer' name='rank' ordinal='2' />
+                  <column datatype='date' name='date' ordinal='3' />
+                  <column datatype='string' name='artist' ordinal='4' />
+                  <column datatype='string' name='url' ordinal='5' />
+                  <column datatype='string' name='region' ordinal='6' />
+                  <column datatype='string' name='chart' ordinal='7' />
+                  <column datatype='string' name='trend' ordinal='8' />
+                  <column datatype='real' name='streams' ordinal='9' />
+                  <column datatype='integer' name='year' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.0029vci1qdvfr11bhj6ak04pvr21'>
+      <datasources>
+        <datasource caption='charts_reduced' name='federated.0029vci1qdvfr11bhj6ak04pvr21' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0029vci1qdvfr11bhj6ak04pvr21'>
+        <column caption='Artist' datatype='string' name='[artist]' role='dimension' type='nominal' />
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+        <column-instance column='[date]' derivation='Month' name='[mn:date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[artist]' derivation='None' name='[none:artist:nk]' pivot='key' type='nominal' />
+        <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0029vci1qdvfr11bhj6ak04pvr21].[mn:date:ok]'>
+        <groupfilter function='level-members' level='[mn:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0029vci1qdvfr11bhj6ak04pvr21].[none:artist:nk]'>
+        <groupfilter function='level-members' level='[none:artist:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0029vci1qdvfr11bhj6ak04pvr21].[yr:date:ok]' context='true'>
+        <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='MAP'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Number of Streams By Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='charts_reduced' name='federated.0029vci1qdvfr11bhj6ak04pvr21' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0029vci1qdvfr11bhj6ak04pvr21'>
+            <column caption='Artist' datatype='string' name='[artist]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Month' name='[mn:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[artist]' derivation='None' name='[none:artist:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Streams' datatype='real' name='[streams]' role='measure' type='quantitative' />
+            <column-instance column='[streams]' derivation='Sum' name='[sum:streams:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0029vci1qdvfr11bhj6ak04pvr21].[yr:date:ok]</column>
+            <column>[federated.0029vci1qdvfr11bhj6ak04pvr21].[mn:date:ok]</column>
+            <column>[federated.0029vci1qdvfr11bhj6ak04pvr21].[none:artist:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0029vci1qdvfr11bhj6ak04pvr21].[Longitude (generated)]' field-type='quantitative' max='6323931.4374420419' min='-29746504.461179089' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0029vci1qdvfr11bhj6ak04pvr21].[Latitude (generated)]' field-type='quantitative' max='14277081.590041876' min='-9769876.3923607189' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0029vci1qdvfr11bhj6ak04pvr21].[sum:streams:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#ddedd8</color>
+                <color>#caeabf</color>
+                <color>#b7e6a8</color>
+                <color>#a5e391</color>
+                <color>#93df7a</color>
+                <color>#82dc64</color>
+                <color>#71d84f</color>
+                <color>#61d53b</color>
+                <color>#51d127</color>
+                <color>#42ce14</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='Coastline' value='true' />
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.40999999642372131' />
+            <format attr='map-style' value='normal' />
+            <format attr='wrap' value='false' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0029vci1qdvfr11bhj6ak04pvr21].[sum:streams:qk]' />
+              <lod column='[federated.0029vci1qdvfr11bhj6ak04pvr21].[none:region:nk]' />
+              <geometry column='[federated.0029vci1qdvfr11bhj6ak04pvr21].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0029vci1qdvfr11bhj6ak04pvr21].[Latitude (generated)]</rows>
+        <cols>[federated.0029vci1qdvfr11bhj6ak04pvr21].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{65B8C8ED-2939-4212-BA28-4D258EE07092}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6A62BD28-E6C1-4123-AF1A-E0544E256CD6}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{679D0A97-59A5-46F0-BD14-5D83F5B89454}' />
+    </window>
+    <window class='worksheet' maximized='true' name='MAP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card size='31' type='pages' />
+            <card size='70' type='filters' />
+            <card size='216' type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='257'>
+            <card param='[federated.0029vci1qdvfr11bhj6ak04pvr21].[yr:date:ok]' type='filter' />
+            <card param='[federated.0029vci1qdvfr11bhj6ak04pvr21].[mn:date:ok]' type='filter' />
+            <card mode='dropdown' param='[federated.0029vci1qdvfr11bhj6ak04pvr21].[none:artist:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0029vci1qdvfr11bhj6ak04pvr21].[sum:streams:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EBDFBE2C-EDC8-43B3-BC34-9DA33AA1263C}' />
+    </window>
+  </windows>
+</workbook>
