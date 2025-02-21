@@ -33,10 +33,30 @@ Creating an interactive dashboard to check the popularity of a song or artist pe
 - Reducing the number of rows to get 15,000,000 instances. (Tableau Public only works with less than 15,000,000 rows of data)
 - Saving the new table in csv format for Tableau entry. 
 
+<ins>3. Tableau</ins>
+- Creating a Map, split by region and use it as filter
+- Plotting a linechart realted to the number of streams per month
+- Displaying the most Popular song per Country (with a formula related to the max number of streams per country)
+- Displaying the latest trend indicator (Moving up, moving down, equal or new entry)
+
 
 ## Results
 
+![screenshot](images/Overview-dashboard.png)
 
+Here is an overview of the dashboard created in Tableau.  
+On the left you can see the filtering options with the years and months, also a drop-down lists on artist and title song. 
+
+The main grpahs are composes of a map (that can be used as filter too), the evolution of the number of streams per month and also the most popular song by country and its trend movement.   
+![screenshot](images/Filtering-region.png)
+
+If we filter in the UK as you can see above, it seems that "Adele - Easy on Me" is the most popular song and it's trending up, even if the number of streams seems to fall down in 2022.  
+Also, the tooltip gives us information about the favorite artist in the selected country. Although "Adele - Easy on Me" is the favorite song of the English citizens, Ed Sheeran is their favorite artist...
+
+![screenshot](images/Filtering-song.png)
+
+Furthermore, we can filter the dashboard per song. In this example, we filtered with the song "Justin Bieber - Let Me Love You".  
+The trend indicator shows only India as a country, but people outside of India listen to this song too by looking the map...  Seems like the trend indicator is missing for other countries for this song in our database.  
 
 
 
